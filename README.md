@@ -28,7 +28,7 @@ src/main/java/com/seuprojeto
 # Clonar o repositório
 
 $ cd hubspot-integration-api
-
+https://github.com/PauloMacedoSS/hubspot-integration.git
 # Configurar o application.yml com suas credenciais do HubSpot
 $ vim src/main/resources/application.yml
 ```
