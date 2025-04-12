@@ -16,7 +16,6 @@ Esta API REST desenvolvida em **Java 11 com Spring Boot 2.7.15** tem como objeti
 | **Spring Boot**    | Rapidez no desenvolvimento, estrutura modular e integração com REST APIs.   |
 | **Maven**          | Ferramenta padrão de build para gerenciamento de dependências.              |
 | **Jackson**        | Serialização/deserialização eficiente de JSON.                              |
-| **Lombok**         | Redução de boilerplate (getters, setters, construtores).                    |
 
 ---
 
@@ -49,7 +48,6 @@ Editar
 | `spring-boot-starter-web`      | Criação dos endpoints REST.                                  |
 | `jackson-databind`             | Conversão entre JSON e objetos Java.                         |
 | `spring-boot-configuration-processor` | Suporte a `@ConfigurationProperties`.             |
-| `lombok`                       | Redução de código repetitivo.                                |
 | `spring-boot-starter-test`     | Suporte a testes unitários e de integração.                  |
 
 ### Plugins
