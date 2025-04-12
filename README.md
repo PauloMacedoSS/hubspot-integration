@@ -29,23 +29,28 @@ src/main/java/com/seuprojeto
 
 $ cd hubspot-integration-api
 https://github.com/PauloMacedoSS/hubspot-integration.git
-# Configurar o application.yml com suas credenciais do HubSpot
-$ vim src/main/resources/application.yml
+# Configurar o application.properties com suas credenciais do HubSpot
+$ vim src/main/resources/application.properties
 ```
-Exemplo de `application.yml`:
-```yaml
-spring:
-  application:
-    name: hubspot-integration
+Exemplo de `application.properties`:
+```properties
+spring.application.name=integration
 
-hubspot:
-  client-id: SEU_CLIENT_ID
-  client-secret: SEU_CLIENT_SECRET
-  redirect-uri: http://localhost:8080/api/oauth/callback
-  scope: contacts
-  auth-url: https://app.hubspot.com/oauth/authorize
-  token-url: https://api.hubapi.com/oauth/v1/token
-  api-url: https://api.hubapi.com
+# Porta padrão da aplicação
+server.port=8080
+
+# Configurações do HubSpot OAuth
+hubspot.client-id=SEU_CLIENT_ID
+hubspot.client-secret=SEU_CLIENT_SECRET
+hubspot.redirect-uri=http://localhost:8080/api/oauth/callback
+hubspot.scope=contacts
+hubspot.auth-url=https://app.hubspot.com/oauth/authorize
+hubspot.token-url=https://api.hubapi.com/oauth/v1/token
+hubspot.api-url=https://api.hubapi.com
+
+# Tempo limite de conexões
+spring.web.client.connection-timeout=5000
+spring.web.client.read-timeout=10000
 ```
 
 ```bash
