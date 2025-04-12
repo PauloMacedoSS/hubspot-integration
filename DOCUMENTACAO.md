@@ -19,20 +19,20 @@ Esta API REST desenvolvida em **Java 11 com Spring Boot 2.7.15** tem como objeti
 
 ---
 
-## 📁 Estrutura do Projeto
+### 📁 Organização do Projeto
+
+A estrutura do projeto segue o padrão MVC com separação clara de responsabilidades:
+
 ```
 src/main/java/com/seuprojeto
 ├── config/         # Configurações do OAuth
 ├── controller/     # Controllers dos endpoints
 ├── service/        # Lógica de negócio
+├── client/         # Clientes externos (opcional)
 ├── dto/            # Data Transfer Objects
 ├── webhook/        # Processamento de webhooks
-└── IntegrationApplication.java
+└── Application.java
 ```
-
-yaml
-Copiar
-Editar
 
 ---
 
@@ -49,7 +49,7 @@ Editar
 ### Dependências
 
 | Biblioteca                      | Função                                                        |
-|--------------------------------|---------------------------------------------------------------|
+|--------------------------------|-----------------------------------------------------------------|
 | `spring-boot-starter-web`      | Criação dos endpoints REST.                                  |
 | `jackson-databind`             | Conversão entre JSON e objetos Java.                         |
 | `spring-boot-configuration-processor` | Suporte a `@ConfigurationProperties`.             |
@@ -89,3 +89,5 @@ Editar
 
 6. **Suporte Multi-Conta**
    - Permitir múltiplas integrações com diferentes contas HubSpot.
+
+---
