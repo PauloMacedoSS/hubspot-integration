@@ -2,7 +2,7 @@
 
 ## 📌 Visão Geral
 
-Esta API REST desenvolvida em **Java 11 com Spring Boot 2.7.15** tem como objetivo integrar um sistema backend com a plataforma **HubSpot**. A integração utiliza o fluxo **OAuth2** para autenticação e permite a **criação de contatos** e o **processamento de webhooks** de eventos de criação de contatos.
+Esta API REST desenvolvida em **Java 11 com Spring Boot 2.7.18** tem como objetivo integrar um sistema backend com a plataforma **HubSpot**. A integração utiliza o fluxo **OAuth2** para autenticação e permite a **criação de contatos** e o **processamento de webhooks** de eventos de criação de contatos.
 
 ---
 
