@@ -19,11 +19,16 @@ Esta API REST desenvolvida em **Java 11 com Spring Boot 2.7.15** tem como objeti
 
 ---
 
-### 📁 Organização do Projeto
-
-A estrutura do projeto segue o padrão MVC com separação clara de responsabilidades:
-
-src/main/java/com/seuprojeto ├── config/ # Configurações do OAuth ├── controller/ # Controllers dos endpoints ├── service/ # Lógica de negócio ├── client/ # Clientes externos (opcional) ├── dto/ # Data Transfer Objects ├── webhook/ # Processamento de webhooks └── Application.java
+## 📁 Estrutura do Projeto
+```
+src/main/java/com/seuprojeto
+├── config/         # Configurações do OAuth
+├── controller/     # Controllers dos endpoints
+├── service/        # Lógica de negócio
+├── dto/            # Data Transfer Objects
+├── webhook/        # Processamento de webhooks
+└── IntegrationApplication.java
+```
 
 yaml
 Copiar
